@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ikigai Sushi & Catering | Miami</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0d0d0e; --gold:#E8C9A0; --muted:#a39a8e; --line:rgba(232,201,160,0.18);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--bg); color:#f1ece2; font-family:'Inter',sans-serif; overflow-x:hidden;}
+  h1,h2,h3{font-family:'Cormorant',serif; font-weight:600; letter-spacing:0.01em;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:1100px; margin:0 auto; padding:0 24px;}
+
+  nav{display:flex; justify-content:space-between; align-items:center; padding:30px 0;}
+  .logo{font-family:'Cormorant'; font-size:24px; letter-spacing:0.04em;}
+  .nav-cta{border:1px solid var(--gold); color:var(--gold); padding:10px 22px; border-radius:2px; font-size:13px; letter-spacing:0.04em;}
+
+  .hero{display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; padding:30px 0 60px;}
+  @media(max-width:760px){.hero{grid-template-columns:1fr;}}
+  .eyebrow{color:var(--gold); font-size:12px; letter-spacing:0.18em; text-transform:uppercase; margin-bottom:18px; display:block;}
+  .hero h1{font-size:clamp(36px,6vw,58px); line-height:1.08; font-style:italic;}
+  .hero p{color:var(--muted); margin-top:18px; font-size:15px; line-height:1.7; max-width:420px;}
+
+  .hero-visual{position:relative; height:380px;}
+  .circle-img{position:absolute; border-radius:50%; overflow:hidden; border:1px solid var(--line);}
+  .circle-img img{width:100%; height:100%; object-fit:cover;}
+  .c1{width:220px; height:220px; top:0; right:30px;}
+  .c2{width:130px; height:130px; bottom:10px; right:200px; border-color:var(--gold);}
+  .dotted-line{position:absolute; border-top:1px dashed var(--line); width:160px; top:120px; right:160px; transform:rotate(8deg);}
+
+  .cta-row{display:flex; gap:16px; margin-top:30px; flex-wrap:wrap;}
+  .btn{padding:13px 26px; font-size:13px; letter-spacing:0.05em; text-transform:uppercase;}
+  .btn-gold{background:var(--gold); color:#1a1206; border-radius:2px;}
+  .btn-line{border:1px solid var(--line); border-radius:2px;}
+
+  .stat-row{display:flex; gap:30px; margin-top:30px; flex-wrap:wrap;}
+  .stat{white-space:nowrap;}
+  .stat b{display:block; font-family:'Cormorant'; font-size:24px; color:var(--gold);}
+  .stat span{font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted);}
+
+  .section-title{text-align:center; margin:70px 0 36px;}
+  .section-title span{color:var(--gold); font-size:12px; letter-spacing:0.18em; text-transform:uppercase;}
+  .section-title h2{font-size:32px; font-style:italic; margin-top:10px;}
+
+  .dish-row{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1px; background:var(--line); margin-bottom:60px;}
+  .dish-card{background:var(--bg); padding:26px 22px; text-align:center;
+    opacity:0; transform:translateY(-40px); transition:transform .7s cubic-bezier(.34,1.56,.64,1), opacity .5s ease;}
+  .dish-card.in-view{opacity:1; transform:translateY(0);}
+  .dish-img{width:100%; aspect-ratio:1/1; border-radius:50%; overflow:hidden; margin:0 auto 16px; border:1px solid var(--line);}
+  .dish-img img{width:100%; height:100%; object-fit:cover;}
+  .dish-card h3{font-size:18px; font-style:italic;}
+  .dish-card p{color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:0.08em; margin-top:4px;}
+
+  .about{display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line); margin-bottom:60px;}
+  @media(max-width:760px){.about{grid-template-columns:1fr;}}
+  .about-card{background:var(--bg); padding:36px;}
+  .about-card h3{font-size:13px; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); font-family:'Inter'; font-weight:500; margin-bottom:16px;}
+  .info-line{padding:10px 0; font-size:14px; color:var(--muted); border-bottom:1px solid var(--line);}
+  .info-line:last-child{border-bottom:none;}
+
+  footer{text-align:center; padding:34px 0; color:var(--muted); font-size:12px; letter-spacing:0.04em; border-top:1px solid var(--line);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <div class="logo">Ikigai Sushi & Catering</div>
+    <a href="https://www.google.com/maps/search/?api=1&query=Ikigai%20Sushi%20%26%20Catering&query_place_id=ChIJ2yDCkTS32YgRPmXJlRMpFYc" target="_blank" class="nav-cta">Get Directions</a>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <span class="eyebrow">Sushi · Miami</span>
+      <h1>Sushi,<br>refined.</h1>
+      <p>Ikigai Sushi & Catering brings a quiet, precise take on Sushi cuisine to Miami, Florida.</p>
+      <div class="cta-row">
+        <a href="https://www.google.com/maps/search/?api=1&query=Ikigai%20Sushi%20%26%20Catering&query_place_id=ChIJ2yDCkTS32YgRPmXJlRMpFYc" target="_blank" class="btn btn-gold">Get Directions</a>
+        <a href="tel:(754) 217-5264" class="btn btn-line">(754) 217-5264</a>
+      </div>
+      <div class="stat-row">
+        <div class="stat"><b>5</b><span>Rating</span></div>
+        <div class="stat"><b>17</b><span>Reviews</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="dotted-line"></div>
+      <div class="circle-img c1"><img src="https://images.pexels.com/photos/10692498/pexels-photo-10692498.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="California Roll"></div>
+      <div class="circle-img c2"><img src="https://images.pexels.com/photos/32482534/pexels-photo-32482534.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Salmon Sushi"></div>
+    </div>
+  </section>
+
+  <div class="section-title">
+    <span>Tasting Menu</span>
+    <h2>House Specialties</h2>
+  </div>
+  <div class="dish-row">
+    
+    <div class="dish-card">
+      <div class="dish-img"><img src="https://images.pexels.com/photos/10692498/pexels-photo-10692498.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="California Roll" loading="lazy"></div>
+      <h3>California Roll</h3>
+      <p>Sushi</p>
+    </div>
+    
+    <div class="dish-card">
+      <div class="dish-img"><img src="https://images.pexels.com/photos/32482534/pexels-photo-32482534.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Salmon Sushi" loading="lazy"></div>
+      <h3>Salmon Sushi</h3>
+      <p>Sushi</p>
+    </div>
+    
+    <div class="dish-card">
+      <div class="dish-img"><img src="https://images.pexels.com/photos/10692535/pexels-photo-10692535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Shrimp Tempura Roll" loading="lazy"></div>
+      <h3>Shrimp Tempura Roll</h3>
+      <p>Sushi</p>
+    </div>
+    
+    <div class="dish-card">
+      <div class="dish-img"><img src="https://images.pexels.com/photos/13869885/pexels-photo-13869885.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Spicy Tuna Roll" loading="lazy"></div>
+      <h3>Spicy Tuna Roll</h3>
+      <p>Sushi</p>
+    </div>
+    
+    <div class="dish-card">
+      <div class="dish-img"><img src="https://images.pexels.com/photos/17584444/pexels-photo-17584444.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Dragon Roll" loading="lazy"></div>
+      <h3>Dragon Roll</h3>
+      <p>Sushi</p>
+    </div>
+    
+    <div class="dish-card">
+      <div class="dish-img"><img src="https://images.pexels.com/photos/1148086/pexels-photo-1148086.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Philadelphia Roll" loading="lazy"></div>
+      <h3>Philadelphia Roll</h3>
+      <p>Sushi</p>
+    </div>
+    
+    <div class="dish-card">
+      <div class="dish-img"><img src="https://images.pexels.com/photos/10692494/pexels-photo-10692494.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Rainbow Roll" loading="lazy"></div>
+      <h3>Rainbow Roll</h3>
+      <p>Sushi</p>
+    </div>
+    
+  </div>
+
+  <div class="about">
+    <div class="about-card">
+      <h3>Visit</h3>
+      <div class="info-line">3250 S Miami Ave, Miami, Florida</div>
+      <div class="info-line">(754) 217-5264</div>
+      <div class="info-line">Sushi Cuisine</div>
+    </div>
+    <div class="about-card">
+      <h3>Reservations</h3>
+      <div class="info-line">Walk-ins welcome, or call ahead to reserve your place at Ikigai Sushi & Catering.</div>
+    </div>
+  </div>
+
+  <footer>Ikigai Sushi & Catering — Miami, Florida — Built with Kalki</footer>
+</div>
+
+<script>
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach((e,i)=>{
+      if(e.isIntersecting){
+        setTimeout(()=>e.target.classList.add('in-view'), i*80);
+        obs.unobserve(e.target);
+      }
+    });
+  }, {threshold:0.15});
+  document.querySelectorAll('.dish-card').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

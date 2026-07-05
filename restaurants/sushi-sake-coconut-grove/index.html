@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sushi Sake Coconut Grove | Miami</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --orange:#FF5722; --ink:#0e0e0e; --muted:#6b6b6b; --line:#e7e7e7; }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif; color:var(--ink); background:#fff; overflow-x:hidden;}
+  h1,h2,h3{font-family:'Archivo Black',sans-serif;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:1100px; margin:0 auto; padding:0 24px;}
+
+  .block-dark{background:var(--ink); color:#fff;}
+  .block-light{background:#fff; color:var(--ink);}
+
+  nav .wrap{display:flex; justify-content:space-between; align-items:center; padding:22px 24px;}
+  .logo{font-family:'Archivo Black'; font-size:18px;}
+  .logo .dot{color:var(--orange);}
+  .nav-cta{background:var(--orange); color:#fff; padding:11px 22px; border-radius:6px; font-size:13px; font-weight:700;}
+
+  .hero{padding:50px 0 60px;}
+  .hero-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px; align-items:center;}
+  @media(max-width:760px){.hero-grid{grid-template-columns:1fr;}}
+  .eyebrow{color:var(--orange); font-size:13px; text-transform:uppercase; letter-spacing:0.08em; font-weight:700; margin-bottom:14px; display:block;}
+  .hero h1{font-size:clamp(32px,6vw,52px); line-height:1.08; text-transform:uppercase;}
+  .hero p{color:#b8b8b8; margin-top:16px; font-size:15px; line-height:1.6; max-width:440px;}
+  .hero-img{aspect-ratio:4/3; border-radius:6px; overflow:hidden;}
+  .hero-img img{width:100%; height:100%; object-fit:cover;}
+
+  .cta-row{display:flex; gap:14px; margin-top:26px; flex-wrap:wrap;}
+  .btn{padding:14px 26px; border-radius:6px; font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:0.03em;}
+  .btn-orange{background:var(--orange); color:#fff;}
+  .btn-white{border:1px solid #444; color:#fff;}
+
+  .strip{display:flex; justify-content:center; gap:50px; padding:34px 0; flex-wrap:wrap; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .strip .stat{text-align:center;}
+  .strip b{display:block; font-family:'Archivo Black'; font-size:22px; color:var(--orange);}
+  .strip span{font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted);}
+
+  .section-title{text-align:center; padding:54px 0 30px;}
+  .section-title span{color:var(--orange); font-size:12px; text-transform:uppercase; letter-spacing:0.1em; font-weight:700;}
+  .section-title h2{font-size:28px; margin-top:8px; text-transform:uppercase;}
+
+  .dish-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0; border-top:1px solid var(--line); border-left:1px solid var(--line);}
+  .dish-card{border-right:1px solid var(--line); border-bottom:1px solid var(--line); padding:0;
+    opacity:0; transform:translateY(-50px); transition:transform .6s cubic-bezier(.34,1.56,.64,1), opacity .5s ease;}
+  .dish-card.in-view{opacity:1; transform:translateY(0);}
+  .dish-card .img-wrap{aspect-ratio:1/1; overflow:hidden;}
+  .dish-card img{width:100%; height:100%; object-fit:cover;}
+  .dish-card .info{padding:16px;}
+  .dish-card h3{font-family:'Inter'; font-weight:700; font-size:14px; text-transform:none;}
+  .dish-card .tag{color:var(--orange); font-size:11px; text-transform:uppercase; letter-spacing:0.06em; font-weight:700;}
+
+  .about{padding:60px 0; display:grid; grid-template-columns:1fr 1fr; gap:30px;}
+  @media(max-width:760px){.about{grid-template-columns:1fr;}}
+  .about h3{font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:var(--orange); font-family:'Inter'; font-weight:700; margin-bottom:14px;}
+  .info-line{padding:9px 0; border-bottom:1px solid #2a2a2a; font-size:14px; color:#cfcfcf;}
+  .info-line:last-child{border-bottom:none;}
+
+  footer{text-align:center; padding:30px 0; color:var(--muted); font-size:13px; border-top:1px solid var(--line);}
+</style>
+</head>
+<body>
+<nav class="block-dark"><div class="wrap">
+  <div class="logo">Sushi Sake Coconut Grove<span class="dot">.</span></div>
+  <a href="https://www.google.com/maps/search/?api=1&query=Sushi%20Sake%20Coconut%20Grove&query_place_id=ChIJnZo7sIW32YgRAZVPsfcgz4I" target="_blank" class="nav-cta">Get Directions</a>
+</div></nav>
+
+<section class="hero block-dark"><div class="wrap">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">Sushi · Miami</span>
+      <h1>Modern Sushi<br>Restaurant</h1>
+      <p>Sushi Sake Coconut Grove serves bold, fresh Sushi food in Miami, Florida.</p>
+      <div class="cta-row">
+        <a href="https://www.google.com/maps/search/?api=1&query=Sushi%20Sake%20Coconut%20Grove&query_place_id=ChIJnZo7sIW32YgRAZVPsfcgz4I" target="_blank" class="btn btn-orange">Get Directions</a>
+        <a href="tel:(305) 645-7746" class="btn btn-white">(305) 645-7746</a>
+      </div>
+    </div>
+    <div class="hero-img"><img src="https://images.pexels.com/photos/10692498/pexels-photo-10692498.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="California Roll"></div>
+  </div>
+</div></section>
+
+<div class="block-light"><div class="wrap">
+  <div class="strip">
+    <div class="stat"><b>⭐ 4.8</b><span>Rating</span></div>
+    <div class="stat"><b>19</b><span>Reviews</span></div>
+    <div class="stat"><b>Miami</b><span>Florida</span></div>
+  </div>
+
+  <div class="section-title">
+    <span>The Menu</span>
+    <h2>Signature Dishes</h2>
+  </div>
+  <div class="dish-grid">
+    
+    <div class="dish-card">
+      <div class="img-wrap"><img src="https://images.pexels.com/photos/10692498/pexels-photo-10692498.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="California Roll" loading="lazy"></div>
+      <div class="info"><h3>California Roll</h3><span class="tag">Sushi</span></div>
+    </div>
+    
+    <div class="dish-card">
+      <div class="img-wrap"><img src="https://images.pexels.com/photos/32482534/pexels-photo-32482534.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Salmon Sushi" loading="lazy"></div>
+      <div class="info"><h3>Salmon Sushi</h3><span class="tag">Sushi</span></div>
+    </div>
+    
+    <div class="dish-card">
+      <div class="img-wrap"><img src="https://images.pexels.com/photos/10692535/pexels-photo-10692535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Shrimp Tempura Roll" loading="lazy"></div>
+      <div class="info"><h3>Shrimp Tempura Roll</h3><span class="tag">Sushi</span></div>
+    </div>
+    
+    <div class="dish-card">
+      <div class="img-wrap"><img src="https://images.pexels.com/photos/13869885/pexels-photo-13869885.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Spicy Tuna Roll" loading="lazy"></div>
+      <div class="info"><h3>Spicy Tuna Roll</h3><span class="tag">Sushi</span></div>
+    </div>
+    
+    <div class="dish-card">
+      <div class="img-wrap"><img src="https://images.pexels.com/photos/17584444/pexels-photo-17584444.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Dragon Roll" loading="lazy"></div>
+      <div class="info"><h3>Dragon Roll</h3><span class="tag">Sushi</span></div>
+    </div>
+    
+    <div class="dish-card">
+      <div class="img-wrap"><img src="https://images.pexels.com/photos/1148086/pexels-photo-1148086.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Philadelphia Roll" loading="lazy"></div>
+      <div class="info"><h3>Philadelphia Roll</h3><span class="tag">Sushi</span></div>
+    </div>
+    
+    <div class="dish-card">
+      <div class="img-wrap"><img src="https://images.pexels.com/photos/10692494/pexels-photo-10692494.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Rainbow Roll" loading="lazy"></div>
+      <div class="info"><h3>Rainbow Roll</h3><span class="tag">Sushi</span></div>
+    </div>
+    
+  </div>
+</div></div>
+
+<div class="block-dark"><div class="wrap">
+  <div class="about">
+    <div>
+      <h3>Find Us</h3>
+      <div class="info-line">3250 S Dixie Hwy, Miami, Florida</div>
+      <div class="info-line">(305) 645-7746</div>
+      <div class="info-line">Sushi Cuisine</div>
+    </div>
+    <div>
+      <h3>Visit Today</h3>
+      <div class="info-line">Walk in or call ahead — Sushi Sake Coconut Grove is open and ready to serve.</div>
+    </div>
+  </div>
+  <footer style="border-top:1px solid #2a2a2a; color:#888;">Sushi Sake Coconut Grove · Miami, Florida · Built with Kalki</footer>
+</div></div>
+
+<script>
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach((e,i)=>{
+      if(e.isIntersecting){
+        setTimeout(()=>e.target.classList.add('in-view'), i*70);
+        obs.unobserve(e.target);
+      }
+    });
+  }, {threshold:0.15});
+  document.querySelectorAll('.dish-card').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

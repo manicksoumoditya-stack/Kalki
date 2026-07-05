@@ -120,6 +120,9 @@
   .foot-grid ul{list-style:none;}
   .foot-grid li{margin-bottom:8px; font-size:13px; color:var(--muted);}
   .foot-bottom{margin-top:30px; padding-top:20px; border-top:1px solid var(--line); text-align:center; color:var(--muted); font-size:12px;}
+  .social-row{display:flex; justify-content:center; gap:14px; margin-bottom:14px; font-size:16px;}
+  .social-row a{width:34px; height:34px; border-radius:50%; background:var(--card); border:1px solid var(--line);
+    display:inline-flex; align-items:center; justify-content:center;}
 </style>
 </head>
 <body>
@@ -136,7 +139,10 @@
   <section class="hero">
     <div>
       <span class="eyebrow">🍽️ The Taste Of Mediterranean</span>
-      <h1>Fresh Mediterranean Cuisine, Old-World Tradition</h1>
+      <h1>
+      
+      Fresh <span class="accent">Mediterranean</span> Cuisine, Old-World Tradition
+      </h1>
       <p>Shawarman brings authentic Mediterranean cuisine to Miami, FL — crafted with passion and tradition.</p>
       <div class="cta-row">
         <a href="https://www.google.com/maps/search/?api=1&query=Shawarman&query_place_id=ChIJh4aHZQCz2YgREugbbVRECk4" target="_blank" class="btn btn-primary">Explore Menu →</a>
@@ -294,7 +300,14 @@
         📞 (929) 387-2546</p>
       </div>
     </div>
-    <div class="foot-bottom">© Shawarman · Miami, FL · Built with Kalki</div>
+    <div class="foot-bottom">
+      <div class="social-row">
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+      </div>
+      © Shawarman · Miami, FL · Built with Kalki
+    </div>
   </footer>
 </div>
 

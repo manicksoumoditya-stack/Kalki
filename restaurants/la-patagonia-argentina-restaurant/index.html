@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --accent:#C1440E; --accent2:#E8B84B;
+    --accent:#E8702A; --accent2:#F2A65A;
     --bg:#0e0b09; --bg2:#161210; --card:#1b1613; --line:rgba(255,255,255,0.08);
     --ink:#f3ede4; --muted:#a89c8d;
   }
@@ -120,13 +120,16 @@
   .foot-grid ul{list-style:none;}
   .foot-grid li{margin-bottom:8px; font-size:13px; color:var(--muted);}
   .foot-bottom{margin-top:30px; padding-top:20px; border-top:1px solid var(--line); text-align:center; color:var(--muted); font-size:12px;}
+  .social-row{display:flex; justify-content:center; gap:14px; margin-bottom:14px; font-size:16px;}
+  .social-row a{width:34px; height:34px; border-radius:50%; background:var(--card); border:1px solid var(--line);
+    display:inline-flex; align-items:center; justify-content:center;}
 </style>
 </head>
 <body>
 <div class="wrap">
 
   <nav>
-    <div class="logo"><span class="icon">🌮</span>La Patagonia Argentina Restaurant</div>
+    <div class="logo"><span class="icon">🍽️</span>La Patagonia Argentina Restaurant</div>
     <div class="nav-links">
       <span>Home</span><span>Menu</span><span>About</span><span>Gallery</span><span>Contact</span>
     </div>
@@ -135,16 +138,19 @@
 
   <section class="hero">
     <div>
-      <span class="eyebrow">🍽️ The Taste Of Argentin</span>
-      <h1>Authentic Argentin Flavor, Every Bite</h1>
-      <p>La Patagonia Argentina Restaurant brings authentic Argentin cuisine to Miami, Florida — crafted with passion and tradition.</p>
+      <span class="eyebrow">🍽️ The Taste Of Argentinian</span>
+      <h1>
+      
+      Real <span class="accent">Argentinian</span> flavor, made fresh daily
+      </h1>
+      <p>La Patagonia Argentina Restaurant brings authentic Argentinian cuisine to Miami, Florida — crafted with passion and tradition.</p>
       <div class="cta-row">
         <a href="https://www.google.com/maps/search/?api=1&query=La%20Patagonia%20Argentina%20Restaurant&query_place_id=ChIJJZbJSmK32YgRVFpin8ns1I8" target="_blank" class="btn btn-primary">Explore Menu →</a>
         <a href="tel:(305) 443-1668" class="btn btn-outline">Our Story</a>
       </div>
     </div>
     <div class="hero-media">
-      <div class="frame"><img src="https://images.pexels.com/photos/36905236/pexels-photo-36905236.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="La Patagonia Argentina Restaurant"></div>
+      <div class="frame"><img src="https://images.pexels.com/photos/37069406/pexels-photo-37069406.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="La Patagonia Argentina Restaurant"></div>
       
       <div class="rating-chip">
         <span class="num">⭐ 4.3</span>
@@ -161,10 +167,10 @@
   <div class="dish-grid">
     
     <div class="dish-card">
-      <div class="img-wrap"><img src="https://images.pexels.com/photos/36905236/pexels-photo-36905236.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Empanadas" loading="lazy"></div>
+      <div class="img-wrap"><img src="https://images.pexels.com/photos/37069406/pexels-photo-37069406.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Asado" loading="lazy"></div>
       <div class="info">
-        <h3>Empanadas</h3>
-        <span class="price">$23.99</span>
+        <h3>Asado</h3>
+        <span class="price">$20.99</span>
       </div>
     </div>
     
@@ -177,10 +183,10 @@
     </div>
     
     <div class="dish-card">
-      <div class="img-wrap"><img src="https://images.pexels.com/photos/37069406/pexels-photo-37069406.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Asado" loading="lazy"></div>
+      <div class="img-wrap"><img src="https://images.pexels.com/photos/36905236/pexels-photo-36905236.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Empanadas" loading="lazy"></div>
       <div class="info">
-        <h3>Asado</h3>
-        <span class="price">$20.99</span>
+        <h3>Empanadas</h3>
+        <span class="price">$23.99</span>
       </div>
     </div>
     
@@ -201,18 +207,18 @@
     </div>
     
     <div class="dish-card">
-      <div class="img-wrap"><img src="https://images.pexels.com/photos/33865562/pexels-photo-33865562.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Chimichurri" loading="lazy"></div>
+      <div class="img-wrap"><img src="https://images.pexels.com/photos/36954951/pexels-photo-36954951.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Chimichurri Chicken" loading="lazy"></div>
       <div class="info">
-        <h3>Chimichurri</h3>
-        <span class="price">$14.99</span>
+        <h3>Chimichurri Chicken</h3>
+        <span class="price">$23.99</span>
       </div>
     </div>
     
     <div class="dish-card">
-      <div class="img-wrap"><img src="https://images.pexels.com/photos/19781596/pexels-photo-19781596.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Locro" loading="lazy"></div>
+      <div class="img-wrap"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=60" alt="Matambre" loading="lazy"></div>
       <div class="info">
-        <h3>Locro</h3>
-        <span class="price">$15.99</span>
+        <h3>Matambre</h3>
+        <span class="price">$16.99</span>
       </div>
     </div>
     
@@ -221,7 +227,7 @@
   <div class="ambience">
     <div>
       <h2>Our <span class="accent">Restaurant</span></h2>
-      <p>A dining experience shaped by rich Argentin culture, warm ambience and exceptional hospitality — right in the heart of Miami.</p>
+      <p>A dining experience shaped by rich Argentinian culture, warm ambience and exceptional hospitality — right in the heart of Miami.</p>
       <div class="stat-strip">
         <div class="stat"><b>23+</b><span>Years Experience</span></div>
         <div class="stat"><b>17+</b><span>Master Chefs</span></div>
@@ -231,29 +237,29 @@
     </div>
     <div class="gallery">
       <div class="main">
-        <img src="https://images.pexels.com/photos/32568165/pexels-photo-32568165.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="La Patagonia Argentina Restaurant interior">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=60" alt="La Patagonia Argentina Restaurant interior">
         <div class="play"><span>▶</span></div>
       </div>
-      <div class="thumb"><img src="https://images.pexels.com/photos/37135617/pexels-photo-37135617.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="La Patagonia Argentina Restaurant dining room"></div>
+      <div class="thumb"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=60" alt="La Patagonia Argentina Restaurant dining room"></div>
       <div class="thumb"><img src="https://images.pexels.com/photos/32568165/pexels-photo-32568165.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="La Patagonia Argentina Restaurant decor"></div>
     </div>
   </div>
 
   <div class="chef">
-    <div class="chef-photo"><img src="https://images.pexels.com/photos/34406264/pexels-photo-34406264.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Executive chef"></div>
+    <div class="chef-photo"><img src="https://images.pexels.com/photos/12193823/pexels-photo-12193823.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Executive chef"></div>
     <div class="chef-text">
       <h3>From Our Chef</h3>
-      <p>Every dish is a celebration of Argentin's rich culinary heritage and authentic flavors, prepared fresh daily.</p>
-      <div class="sig">Chef Marcus</div>
+      <p>Every dish is a celebration of Argentinian's rich culinary heritage and authentic flavors, prepared fresh daily.</p>
+      <div class="sig">Chef Noor</div>
       <div class="role">Executive Chef</div>
     </div>
     <div class="chef-menu">
       
-      <div class="row"><span>Empanadas</span><span class="price">$23.99</span></div>
+      <div class="row"><span>Asado</span><span class="price">$20.99</span></div>
       
       <div class="row"><span>Choripan</span><span class="price">$21.99</span></div>
       
-      <div class="row"><span>Asado</span><span class="price">$20.99</span></div>
+      <div class="row"><span>Empanadas</span><span class="price">$23.99</span></div>
       
       <div class="row"><span>Milanesa</span><span class="price">$9.99</span></div>
       
@@ -265,7 +271,7 @@
       <span class="ico">📅</span>
       <div>
         <h3>Make a Reservation</h3>
-        <p>Book your table now and enjoy the best of Argentin cuisine.</p>
+        <p>Book your table now and enjoy the best of Argentinian cuisine.</p>
       </div>
     </div>
     <div class="right">
@@ -277,8 +283,8 @@
   <footer>
     <div class="foot-grid">
       <div>
-        <div class="flogo">🌮 La Patagonia Argentina Restaurant</div>
-        <p class="fmuted">Argentin Cuisine</p>
+        <div class="flogo">🍽️ La Patagonia Argentina Restaurant</div>
+        <p class="fmuted">Argentinian Cuisine</p>
       </div>
       <div>
         <h4>Quick Links</h4>
@@ -286,7 +292,7 @@
       </div>
       <div>
         <h4>Our Menu</h4>
-        <ul><li>Starters</li><li>Tacos & Antojitos</li><li>Mains</li><li>Desserts</li></ul>
+        <ul><li>Starters</li><li>Mains</li><li>Sides</li><li>Desserts</li></ul>
       </div>
       <div>
         <h4>Contact Us</h4>
@@ -294,7 +300,14 @@
         📞 (305) 443-1668</p>
       </div>
     </div>
-    <div class="foot-bottom">© La Patagonia Argentina Restaurant · Miami, Florida · Built with Kalki</div>
+    <div class="foot-bottom">
+      <div class="social-row">
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+      </div>
+      © La Patagonia Argentina Restaurant · Miami, Florida · Built with Kalki
+    </div>
   </footer>
 </div>
 

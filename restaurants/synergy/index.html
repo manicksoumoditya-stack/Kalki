@@ -120,6 +120,9 @@
   .foot-grid ul{list-style:none;}
   .foot-grid li{margin-bottom:8px; font-size:13px; color:var(--muted);}
   .foot-bottom{margin-top:30px; padding-top:20px; border-top:1px solid var(--line); text-align:center; color:var(--muted); font-size:12px;}
+  .social-row{display:flex; justify-content:center; gap:14px; margin-bottom:14px; font-size:16px;}
+  .social-row a{width:34px; height:34px; border-radius:50%; background:var(--card); border:1px solid var(--line);
+    display:inline-flex; align-items:center; justify-content:center;}
 </style>
 </head>
 <body>
@@ -136,7 +139,10 @@
   <section class="hero">
     <div>
       <span class="eyebrow">🍽️ The Taste Of Soul food</span>
-      <h1>Delicious Soul food Food Is Waiting For You</h1>
+      <h1>
+      
+      Delicious <span class="accent">Soul food</span> Food Is Waiting For You
+      </h1>
       <p>Synergy brings authentic Soul food cuisine to Miami, Florida — crafted with passion and tradition.</p>
       <div class="cta-row">
         <a href="https://www.google.com/maps/search/?api=1&query=Synergy&query_place_id=ChIJ4f9tQwC32YgRNo3H87N4ri0" target="_blank" class="btn btn-primary">Explore Menu →</a>
@@ -289,7 +295,14 @@
         </p>
       </div>
     </div>
-    <div class="foot-bottom">© Synergy · Miami, Florida · Built with Kalki</div>
+    <div class="foot-bottom">
+      <div class="social-row">
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+      </div>
+      © Synergy · Miami, Florida · Built with Kalki
+    </div>
   </footer>
 </div>
 

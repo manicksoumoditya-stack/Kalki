@@ -22,15 +22,15 @@
 
   /* fixed blurred backdrop behind the whole page - the actual "glassmorphism" effect */
   .backdrop{position:fixed; inset:0; z-index:-2; background-image:url('https://images.pexels.com/photos/21822134/pexels-photo-21822134.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
-    background-size:cover; background-position:center; filter:blur(28px) brightness(0.9) saturate(1.1); transform:scale(1.15);}
-  .backdrop::after{content:''; position:fixed; inset:0; background:linear-gradient(180deg, rgba(255,247,240,0.55), rgba(255,247,240,0.85) 30%, rgba(255,247,240,0.95));}
+    background-size:cover; background-position:center; filter:blur(20px) brightness(1.05) saturate(1.6); transform:scale(1.15);}
+  .backdrop::after{content:''; position:fixed; inset:0; background:linear-gradient(180deg, rgba(255,250,245,0.18), rgba(255,250,245,0.35) 40%, rgba(255,250,245,0.55));}
 
-  .glass{background:rgba(255,255,255,0.55); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px);
-    border:1px solid rgba(255,255,255,0.6); border-radius:22px; box-shadow:0 20px 50px rgba(80,50,20,0.12);}
+  .glass{background:rgba(255,255,255,0.62); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,0.65); border-radius:22px; box-shadow:0 20px 50px rgba(80,50,20,0.12);}
 
   /* nav */
   nav{display:flex; justify-content:space-between; align-items:center; padding:16px 24px; margin:16px auto 0; max-width:1180px;}
-  .logo{display:flex; align-items:center; gap:10px; font-family:'Playfair Display'; font-weight:700; font-size:19px;}
+  .logo{display:flex; align-items:center; gap:10px; font-family:'Playfair Display'; font-weight:800; font-size:24px;}
   .logo .icon{font-size:22px;}
   .nav-links{display:none; gap:26px; font-size:14px; color:var(--muted);}
   @media(min-width:840px){.nav-links{display:flex;}}
@@ -43,6 +43,12 @@
   .hero::before{content:''; position:absolute; inset:0;
     background:linear-gradient(100deg, rgba(20,12,6,0.78) 0%, rgba(20,12,6,0.55) 45%, rgba(20,12,6,0.15) 75%);}
   .hero-inner{position:relative; z-index:2; padding:40px; max-width:600px;}
+  @media(max-width:700px){
+    .hero{min-height:340px;}
+    .hero-inner{padding:26px 22px; max-width:100%;}
+    .hero h1{font-size:clamp(24px,7vw,30px) !important; line-height:1.2 !important;}
+    .hero p{font-size:13px; line-height:1.5; -webkit-line-clamp:3; display:-webkit-box; -webkit-box-orient:vertical; overflow:hidden;}
+  }
   .eyebrow{display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.35);
     color:#fff; padding:7px 16px; border-radius:999px; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:16px; font-weight:700;}
   .hero h1{font-size:clamp(30px,5vw,44px); line-height:1.14; font-weight:700; color:#fff;}
@@ -73,7 +79,7 @@
   @media(max-width:560px){.dish-grid{grid-template-columns:repeat(2,1fr);}}
   .dish-card{background:rgba(255,255,255,0.6); border:1px solid rgba(255,255,255,0.8); border-radius:16px; overflow:hidden;}
   .dish-card .img-wrap{aspect-ratio:1/1; overflow:hidden; position:relative;}
-  .dish-card img{width:100%; height:100%; object-fit:cover;}
+  .dish-card img{width:100%; height:100%; object-fit:cover; filter:drop-shadow(0 10px 14px rgba(0,0,0,0.28));}
   .dish-card .plus{position:absolute; right:8px; bottom:8px; width:26px; height:26px; border-radius:50%; background:var(--accent);
     color:#fff; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:700;}
   .dish-card .info{padding:10px 12px;}
@@ -144,7 +150,7 @@
     <div class="nav-links">
       <span>Home</span><span>Menu</span><span>About Us</span><span>Gallery</span><span>Contact</span>
     </div>
-    <a href="https://www.google.com/maps/search/?api=1&query=Tropical%20Perk%20Cafeteria&query_place_id=ChIJN8m6JEy22YgR2D4FUcpI7ww" target="_blank" class="nav-cta">Book a Table</a>
+    <a href="tel:(305) 285-9061" class="nav-cta">Book a Table</a>
   </nav>
 
   <section class="hero">
@@ -316,8 +322,8 @@
         </div>
       </div>
       <div class="right">
-        <a href="https://www.google.com/maps/search/?api=1&query=Tropical%20Perk%20Cafeteria&query_place_id=ChIJN8m6JEy22YgR2D4FUcpI7ww" target="_blank" class="btn btn-primary">Book a Table</a>
-        <span class="phone">📞 (305) 285-9061</span>
+        <a href="tel:(305) 285-9061" class="btn btn-primary">📞 Book a Table</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Tropical%20Perk%20Cafeteria&query_place_id=ChIJN8m6JEy22YgR2D4FUcpI7ww" target="_blank" class="btn btn-glass">📍 Get Directions</a>
       </div>
     </div>
   </div>
